@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/admin/
+
+# Sitemap
+Sitemap: https://dolar12.news/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
