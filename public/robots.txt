@@ -16,7 +16,7 @@ Disallow: /admin/
 Disallow: /api/admin/
 
 # Sitemap
-Sitemap: https://dolar12.news/sitemap.xml
+Sitemap: https://dolar12.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

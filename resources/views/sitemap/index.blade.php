@@ -83,6 +83,17 @@
             <image:title>Dólar Tarjeta - Valor: ${{ number_format($dolarData['tarjeta']['valor'] ?? 0, 0, ',', '.') }}</image:title>
         </image:image>
     </url>
+
+    <url>
+        <loc>{{ $baseUrl }}/dolar/freelance</loc>
+        <lastmod>{{ $lastModified }}</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>{{ $baseUrl }}/api/monitor/cotizaciones</image:loc>
+            <image:title>Dólar Freelance - Valor: ${{ number_format($dolarData['freelance']['valor'] ?? 0, 0, ',', '.') }}</image:title>
+        </image:image>
+    </url>
     @endif
 
     <!-- Páginas informativas -->

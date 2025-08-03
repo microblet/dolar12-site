@@ -1,4 +1,4 @@
-# Dolar12.News - Monitor Laravel
+# Dolar12.com - Monitor Laravel
 
 Monitor de cotizaciones del dólar en tiempo real usando Laravel, optimizado para streaming en OBS.
 
@@ -259,4 +259,4 @@ Documentación completa de la API disponible en [docs/api.md](docs/api.md)
 ---
 
 **Desarrollado con ❤️ para la comunidad de streaming**
-**Dolar12.News** - Laravel Edition
+**Dolar12.com** - Laravel Edition

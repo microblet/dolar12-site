@@ -193,7 +193,7 @@ class DolarMonitorController extends Controller
         $data = [
             '@context' => 'https://schema.org',
             '@type' => 'WebSite',
-            'name' => 'Dolar12.News',
+            'name' => 'Dolar12.com',
             'url' => request()->getSchemeAndHttpHost(),
             'description' => 'Cotización del dólar en tiempo real. Monitoreo profesional de tipos de cambio en Argentina.',
             'potentialAction' => [
@@ -211,14 +211,14 @@ class DolarMonitorController extends Controller
         $data = [
             '@context' => 'https://schema.org',
             '@type' => 'FinancialService',
-            'name' => 'Dolar12.News - Cotización Dólar',
+            'name' => 'Dolar12.com - Cotización Dólar',
             'description' => 'Servicio de cotización del dólar en tiempo real',
             'url' => request()->getSchemeAndHttpHost(),
             'areaServed' => 'AR',
             'serviceType' => 'Cotización de divisas',
             'provider' => [
                 '@type' => 'Organization',
-                'name' => 'Dolar12.News'
+                'name' => 'Dolar12.com'
             ]
         ];
         

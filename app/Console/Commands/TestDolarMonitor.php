@@ -12,7 +12,7 @@ class TestDolarMonitor extends Command
 
     public function handle()
     {
-        $this->info('=== TESTING DOLAR12.NEWS LARAVEL ===');
+        $this->info('=== TESTING DOLAR12.COM LARAVEL ===');
         $this->newLine();
 
         // Test del servicio de scraping

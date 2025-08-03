@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dólar Hoy - Cotización en Tiempo Real | Dolar12.News</title>
+    <title>Dólar Hoy - Cotización en Tiempo Real | Dolar12.com</title>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="{{ $seoDescription ?? 'Cotización del dólar en tiempo real. Dólar oficial, blue, MEP, CCL, cripto y tarjeta. Actualización automática cada 2 minutos. Monitoreo profesional de tipos de cambio en Argentina.' }}">
     <meta name="keywords" content="{{ $seoKeywords ?? 'dolar, cotizacion, dolar oficial, dolar blue, dolar mep, dolar ccl, dolar cripto, dolar tarjeta, argentina, tipo de cambio, cotizaciones' }}">
-    <meta name="author" content="Dolar12.News">
+    <meta name="author" content="Dolar12.com">
     <meta name="robots" content="index, follow">
     <meta name="language" content="es">
     <meta name="revisit-after" content="2 minutes">
@@ -16,16 +16,16 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->url() }}">
-    <meta property="og:title" content="Dólar Hoy - Cotización en Tiempo Real | Dolar12.News">
+    <meta property="og:title" content="Dólar Hoy - Cotización en Tiempo Real | Dolar12.com">
     <meta property="og:description" content="{{ $seoDescription ?? 'Cotización del dólar en tiempo real. Dólar oficial, blue, MEP, CCL, cripto y tarjeta. Actualización automática cada 2 minutos.' }}">
     <meta property="og:image" content="{{ request()->getSchemeAndHttpHost() }}/img/dolar-preview.jpg">
-    <meta property="og:site_name" content="Dolar12.News">
+    <meta property="og:site_name" content="Dolar12.com">
     <meta property="og:locale" content="es_AR">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ request()->url() }}">
-    <meta property="twitter:title" content="Dólar Hoy - Cotización en Tiempo Real | Dolar12.News">
+    <meta property="twitter:title" content="Dólar Hoy - Cotización en Tiempo Real | Dolar12.com">
     <meta property="twitter:description" content="{{ $seoDescription ?? 'Cotización del dólar en tiempo real. Dólar oficial, blue, MEP, CCL, cripto y tarjeta. Actualización automática cada 2 minutos.' }}">
     <meta property="twitter:image" content="{{ request()->getSchemeAndHttpHost() }}/img/dolar-preview.jpg">
     
@@ -51,7 +51,7 @@
 <body>
     <div class="dashboard">
         <div class="header">
-            <h1>Dolar<span class="brand-number">12</span><span class="brand-domain">.news</span></h1>
+            <h1>Dolar<span class="brand-number">12</span><span class="brand-domain">.com</span></h1>
             <p class="subtitle">Datos en Tiempo Real</p>
         </div>
 
