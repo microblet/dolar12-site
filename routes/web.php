@@ -12,3 +12,6 @@ Route::prefix('api/monitor')->group(function () {
 
 // Sitemap
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
+// Legal pages
+Route::get('/terminos-de-uso', [DolarMonitorController::class, 'terms'])->name('terms');

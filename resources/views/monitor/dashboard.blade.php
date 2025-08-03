@@ -176,6 +176,10 @@
                 <span>Actualización automática cada 2 min</span>
             </div>
         </div>
+
+        <div class="footer">
+            <p><a href="{{ route('terms') }}">Términos de Uso</a> | <span class="email"><a href="mailto:hola@dolar12.com">hola@dolar12.com</a></span></p>
+        </div>
     </div>
 
     <!-- External JavaScript -->

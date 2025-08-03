@@ -224,4 +224,9 @@ class DolarMonitorController extends Controller
         
         return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
+
+    public function terms()
+    {
+        return view('legal.terms');
+    }
 }

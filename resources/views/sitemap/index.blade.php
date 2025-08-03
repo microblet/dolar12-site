@@ -110,4 +110,12 @@
         <changefreq>always</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Páginas legales -->
+    <url>
+        <loc>{{ $baseUrl }}/terminos-de-uso</loc>
+        <lastmod>{{ $lastModified }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset> 

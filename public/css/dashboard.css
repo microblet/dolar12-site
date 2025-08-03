@@ -18,9 +18,9 @@ body {
 .dashboard {
     background: transparent;
     border-radius: 0;
-    padding: 40px 60px;
+    padding: 40px 60px 10px 60px;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -64,6 +64,7 @@ body {
     gap: 30px;
     flex: 1;
     align-content: start;
+    margin-bottom: 0;
 }
 
 .dolar-card {
@@ -130,8 +131,7 @@ body {
 
 .timestamp {
     text-align: center;
-    margin-top: auto;
-    padding-top: 20px;
+    padding: 20px 0 10px 0;
     color: #a0a0a0;
     font-size: 1.1rem;
     font-weight: 300;
@@ -220,6 +220,36 @@ body {
     .dolar-card {
         padding: 20px;
     }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    border-top: 1px solid rgba(80, 80, 80, 0.2);
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #ff8a8a;
+}
+
+.footer .email a {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.footer .email a:hover {
+    color: #aaa;
 }
 
 /* Animación sutil para los valores */
