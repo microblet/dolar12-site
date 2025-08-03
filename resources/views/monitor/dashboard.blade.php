@@ -52,7 +52,7 @@
     <div class="dashboard">
         <div class="header">
             <h1>Dolar<span class="brand-number">12</span><span class="brand-domain">.com</span></h1>
-            <p class="subtitle">Datos en Tiempo Real</p>
+            <p class="subtitle">ECONOMÍA DE BOLSILLO EN TIEMPO REAL</p>
         </div>
 
         <div class="grid">
