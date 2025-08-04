@@ -8,4 +8,41 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-inter: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    
+    --color-dark-100: #1a1a1a;
+    --color-dark-200: #2a2a2a;
+    --color-dark-300: #3a3a3a;
+    --color-dark-400: #4a4a4a;
+    --color-dark-500: #5a5a5a;
+}
+
+/* Price value pulse animation */
+@keyframes pulse-price {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.price-pulse {
+    animation: pulse-price 2s infinite;
+}
+
+/* Custom responsive classes */
+@media (max-width: 1600px) {
+    .responsive-3cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .responsive-2cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .responsive-1col {
+        grid-template-columns: 1fr;
+    }
 }
