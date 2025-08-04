@@ -161,7 +161,7 @@
                     <h2 class="text-xl text-red-400 font-medium tracking-wide">Dolar Hoy</h2>
                     <div class="inline-flex items-center gap-2 bg-neutral-800 bg-opacity-80 border border-neutral-600 border-opacity-30 rounded-full px-3 py-1.5 text-xs text-gray-400" id="autoUpdateIndicator">
                         <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                        <span>Cada 2 min</span>
+                        <span>En vivo</span>
                     </div>
                 </div>
                 <p class="text-xs text-gray-500 mb-4">Última actualización: <span id="timestamp">--:--</span></p>
@@ -228,9 +228,33 @@
 
 
 
-        <div class="text-center mt-auto py-2.5 border-t border-gray-600 border-opacity-20 text-gray-400 text-sm flex-shrink-0">
-            <p><a href="{{ route('terms') }}" class="text-red-400 no-underline transition-colors duration-200 hover:text-red-300">Términos de Uso</a> | <span class="text-gray-500 text-xs"><a href="mailto:hola@dolar12.com" class="text-gray-500 no-underline text-xs transition-colors duration-200 hover:text-gray-300">hola@dolar12.com</a></span></p>
-        </div>
+        <!-- Footer -->
+        <footer class="mt-auto pt-8 pb-4 border-t border-gray-600 border-opacity-20 flex-shrink-0">
+            <!-- Logo del footer -->
+            <div class="text-center mb-4">
+                <h3 class="text-gray-300 text-2xl font-light tracking-tight">
+                    Dolar<span class="font-semibold text-red-400">12</span><span class="font-extralight text-gray-500 text-xl">.com</span>
+                </h3>
+            </div>
+            
+            <!-- Enlaces y contacto -->
+            <div class="text-center mb-4">
+                <div class="flex justify-center items-center gap-4 text-sm">
+                    <a href="{{ route('terms') }}" class="text-red-400 no-underline transition-colors duration-200 hover:text-red-300">
+                        Términos de Uso
+                    </a>
+                    <span class="text-gray-600">|</span>
+                    <a href="mailto:hola@dolar12.com" class="text-gray-400 no-underline transition-colors duration-200 hover:text-gray-300">
+                        Contacto
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-xs text-gray-500">
+                <p>© 2025 Dolar12.com - Todos los derechos reservados</p>
+            </div>
+        </footer>
     </div>
 
     <!-- External JavaScript -->
