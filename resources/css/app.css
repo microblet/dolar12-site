@@ -28,6 +28,30 @@
     animation: pulse-price 2s infinite;
 }
 
+/* News filter buttons */
+.news-filter-btn {
+    padding: 4px 12px;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    background: transparent;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.news-filter-btn:hover {
+    color: #d1d5db;
+    border-color: #4b5563;
+}
+
+.news-filter-btn.active {
+    color: #f87171;
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.1);
+}
+
 /* Custom responsive classes */
 @media (max-width: 1600px) {
     .responsive-3cols {

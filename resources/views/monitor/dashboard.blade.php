@@ -49,20 +49,32 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-inter bg-dark-100 min-h-screen w-full flex flex-col p-0 m-0">
-    <div class="bg-transparent rounded-none px-16 py-5 w-full h-screen flex flex-col">
+    <div class="bg-transparent rounded-none px-8 py-5 w-full h-screen flex flex-col max-w-7xl mx-auto">
         <div class="text-center mb-10 flex-shrink-0">
             <h1 class="text-gray-200 text-6xl font-light mb-2 tracking-tight">
                 Dolar<span class="font-semibold text-red-400">12</span><span class="font-extralight text-gray-400 text-5xl">.com</span>
             </h1>
-            <p class="text-gray-400 text-base font-light tracking-widest uppercase">Microdatos económicos en tiempo real</p>
-            <p class="text-gray-500 text-sm font-normal tracking-wide mt-4 uppercase">Argentina</p>
+            <p class="text-gray-400 text-base font-light tracking-widest uppercase">Economía Argentina en tiempo real</p>
         </div>
 
         <!-- Layout de 2 columnas -->
         <div class="flex gap-8 flex-1">
             <!-- Columna izquierda: Noticias -->
             <div class="flex-1">
-                <h2 class="text-xl text-red-400 font-medium mb-6 tracking-wide">Últimas Noticias</h2>
+                <div class="mb-6">
+                    <h2 class="text-xl text-red-400 font-medium tracking-wide mb-3">Últimas Noticias</h2>
+                    <div class="flex gap-2 flex-wrap" id="news-filters">
+                        <button class="news-filter-btn active" data-source="todos">Todos</button>
+                        <button class="news-filter-btn" data-source="ambito">Ámbito</button>
+                        <button class="news-filter-btn" data-source="clarin">Clarín</button>
+                        <button class="news-filter-btn" data-source="infobae">Infobae</button>
+                        <button class="news-filter-btn" data-source="lanacion">La Nación</button>
+                        <button class="news-filter-btn" data-source="lapoliticaonline">La Política Online</button>
+                        <button class="news-filter-btn" data-source="pagina12">Página12</button>
+                        <button class="news-filter-btn" data-source="perfil">Perfil</button>
+                        <button class="news-filter-btn" data-source="tn">TN</button>
+                    </div>
+                </div>
                 <div class="space-y-4">
                     <!-- Noticia 1 -->
                     <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
