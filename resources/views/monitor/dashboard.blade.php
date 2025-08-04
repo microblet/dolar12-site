@@ -157,7 +157,14 @@
 
             <!-- Columna derecha: Cotizaciones -->
             <div class="w-80">
-                <h2 class="text-xl text-red-400 font-medium mb-6 tracking-wide">Cotizaciones</h2>
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-xl text-red-400 font-medium tracking-wide">Dolar Hoy</h2>
+                    <div class="inline-flex items-center gap-2 bg-neutral-800 bg-opacity-80 border border-neutral-600 border-opacity-30 rounded-full px-3 py-1.5 text-xs text-gray-400" id="autoUpdateIndicator">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span>Cada 2 min</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mb-4">Última actualización: <span id="timestamp">--:--</span></p>
                 
                 <!-- Header -->
                 <div class="grid grid-cols-3 gap-3 mb-3 pb-2 border-b border-neutral-700 border-opacity-20">
@@ -202,6 +209,13 @@
                         <div class="text-base text-gray-400 text-center">${{ number_format($cotizaciones['cripto']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
 
+                    <!-- Dólar Freelance -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-400 font-normal">Freelance</span>
+                        <div class="text-base text-gray-500 text-center">-</div>
+                        <div class="text-base text-gray-400 text-center">${{ number_format($cotizaciones['freelance']['valor'] ?? 0, 2, ',', '.') }}</div>
+                    </div>
+
                     <!-- Dólar Tarjeta -->
                     <div class="grid grid-cols-3 gap-3 py-2">
                         <span class="text-base text-gray-400 font-normal">Tarjeta</span>
@@ -212,15 +226,7 @@
             </div>
         </div>
 
-        <div class="text-center py-5 px-0 text-gray-400 text-base font-light tracking-widest uppercase flex-shrink-0">
-            <p>Última Actualización: <span id="timestamp">--:--</span></p>
-            <div class="inline-flex items-center gap-2 bg-neutral-800 bg-opacity-80 border border-neutral-600 border-opacity-30 rounded-full px-3 py-1.5 text-xs text-gray-400 mt-2.5 mb-1.5" id="autoUpdateIndicator">
-                <div class="w-3 h-3 border border-gray-500 rounded-full relative animate-spin">
-                    <div class="absolute top-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-1.5 border-r-1.5 border-b-2 border-l-transparent border-r-transparent border-b-gray-500"></div>
-                </div>
-                <span>Actualización automática cada 2 min</span>
-            </div>
-        </div>
+
 
         <div class="text-center mt-auto py-2.5 border-t border-gray-600 border-opacity-20 text-gray-400 text-sm flex-shrink-0">
             <p><a href="{{ route('terms') }}" class="text-red-400 no-underline transition-colors duration-200 hover:text-red-300">Términos de Uso</a> | <span class="text-gray-500 text-xs"><a href="mailto:hola@dolar12.com" class="text-gray-500 no-underline text-xs transition-colors duration-200 hover:text-gray-300">hola@dolar12.com</a></span></p>
