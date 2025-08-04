@@ -58,115 +58,143 @@
             <p class="text-gray-500 text-sm font-normal tracking-wide mt-4 uppercase">Argentina</p>
         </div>
 
-        <div class="grid grid-cols-4 responsive-3cols responsive-2cols responsive-1col gap-8 flex-1 content-start mb-0 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8 transition-all duration-200 relative hover:border-neutral-500 hover:border-opacity-35 hover:bg-neutral-800 hover:bg-opacity-80">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR OFICIAL</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight price-pulse">${{ number_format($cotizaciones['oficial']['compra'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['oficial']['venta'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
+        <!-- Layout de 2 columnas -->
+        <div class="flex gap-8 flex-1">
+            <!-- Columna izquierda: Noticias -->
+            <div class="flex-1">
+                <h2 class="text-xl text-red-400 font-medium mb-6 tracking-wide">Últimas Noticias</h2>
+                <div class="space-y-4">
+                    <!-- Noticia 1 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                BCRA subió tasa de interés 25 puntos básicos en decisión sorpresiva tras reunión extraordinaria. El dólar blue reaccionó al alza y cerró en $1250, mientras que los dólares financieros mostraron volatilidad en la jornada.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 15 min</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 2 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                La inflación de diciembre se ubicó en 2.5%, por debajo de las expectativas del mercado que proyectaban 2.8%. El dato consolida la tendencia bajista iniciada en octubre y refuerza las expectativas de moderación inflacionaria para 2024.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 1 hora</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 3 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                El FMI aprobó el desembolso de USD 800 millones correspondiente a la séptima revisión del programa. Los dólares financieros MEP y CCL bajaron 2% en respuesta positiva a la noticia, aliviando la presión cambiaria de corto plazo.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 2 horas</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 4 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                Las reservas del BCRA aumentaron USD 200 millones impulsadas por la liquidación de divisas del sector agrícola. El ingreso de dólares por exportaciones de soja y maíz fortalece la posición externa del país en el inicio del año.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 3 horas</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 5 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                Blanqueo de capitales: ingresaron USD 18.000 millones desde el inicio del régimen especial de exteriorización. La medida superó las expectativas oficiales y representa el 15% del total de reservas brutas del sistema financiero.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 4 horas</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 6 -->
+                    <article class="flex gap-4 border-b border-neutral-700 border-opacity-20 pb-4 hover:border-opacity-40 transition-colors duration-200">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                El Ministerio de Economía anunció nuevas medidas para incentivar la inversión productiva en sectores estratégicos. Los beneficios fiscales incluyen deducción del 200% en gastos de I+D y reducción de retenciones para exportaciones industriales.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 5 horas</time>
+                        </div>
+                    </article>
+
+                    <!-- Noticia 7 -->
+                    <article class="flex gap-4 pb-4">
+                        <div class="w-3 h-3 bg-gray-600 rounded-full flex-shrink-0 mt-2"></div>
+                        <div class="flex-1">
+                            <p class="text-gray-200 text-base leading-relaxed font-normal mb-2">
+                                La Bolsa de Cereales proyecta una cosecha récord de soja de 52 millones de toneladas para la campaña 2023/24. Las condiciones climáticas favorables en enero impulsan las expectativas de ingreso de divisas por exportaciones agrícolas.
+                            </p>
+                            <time class="text-sm text-gray-500">hace 6 horas</time>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR BLUE</span>
+            <!-- Columna derecha: Cotizaciones -->
+            <div class="w-80">
+                <h2 class="text-xl text-red-400 font-medium mb-6 tracking-wide">Cotizaciones</h2>
+                
+                <!-- Header -->
+                <div class="grid grid-cols-3 gap-3 mb-3 pb-2 border-b border-neutral-700 border-opacity-20">
+                    <div class="text-xs text-gray-400 font-light uppercase tracking-wider"></div>
+                    <div class="text-sm text-gray-400 font-light uppercase tracking-wider text-center">Compra</div>
+                    <div class="text-sm text-gray-400 font-light uppercase tracking-wider text-center">Venta</div>
                 </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['blue']['compra'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['blue']['venta'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR MEP</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['mep']['compra'] ?? 0, 0, ',', '.') }}</div>
+                <div class="space-y-1">
+                    <!-- Dólar Oficial -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-300 font-normal">Oficial</span>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['oficial']['compra'] ?? 0, 2, ',', '.') }}</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['oficial']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['mep']['venta'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">CONTADO CON LIQUIDACIÓN</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['ccl']['compra'] ?? 0, 0, ',', '.') }}</div>
+                    <!-- Dólar Blue -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-300 font-normal">Blue</span>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['blue']['compra'] ?? 0, 2, ',', '.') }}</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['blue']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['ccl']['venta'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR CRIPTO</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['cripto']['compra'] ?? 0, 0, ',', '.') }}</div>
+                    <!-- Dólar MEP -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-300 font-normal">MEP</span>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['mep']['compra'] ?? 0, 2, ',', '.') }}</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['mep']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['cripto']['venta'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR TARJETA</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">-</div>
+                    <!-- CCL -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-300 font-normal">CCL</span>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['ccl']['compra'] ?? 0, 2, ',', '.') }}</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['ccl']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['tarjeta']['valor'] ?? 0, 0, ',', '.') }}</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-neutral-800 bg-opacity-90 border border-neutral-900 border-opacity-25 rounded-lg p-8">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-lg font-normal text-gray-300 tracking-wide uppercase">DÓLAR FREELANCE</span>
-                </div>
-                <div class="flex justify-between items-center gap-10">
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Compra</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">-</div>
+                    <!-- Dólar Cripto -->
+                    <div class="grid grid-cols-3 gap-3 py-2 border-b border-neutral-700 border-opacity-10">
+                        <span class="text-base text-gray-300 font-normal">Cripto</span>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['cripto']['compra'] ?? 0, 2, ',', '.') }}</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['cripto']['venta'] ?? 0, 2, ',', '.') }}</div>
                     </div>
-                    <div class="text-center flex-1">
-                        <div class="text-xs text-gray-400 mb-2 uppercase tracking-widest font-light">Venta</div>
-                        <div class="text-4xl font-extralight text-gray-50 tracking-tight">${{ number_format($cotizaciones['freelance']['valor'] ?? 0, 0, ',', '.') }}</div>
+
+                    <!-- Dólar Tarjeta -->
+                    <div class="grid grid-cols-3 gap-3 py-2">
+                        <span class="text-base text-gray-300 font-normal">Tarjeta</span>
+                        <div class="text-base text-gray-500 text-center">-</div>
+                        <div class="text-base text-gray-200 text-center">${{ number_format($cotizaciones['tarjeta']['valor'] ?? 0, 2, ',', '.') }}</div>
                     </div>
                 </div>
             </div>
